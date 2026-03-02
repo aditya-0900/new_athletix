@@ -1,0 +1,9 @@
+{
+  "name": "AthletixI - Next-Gen Sports Tech",
+  "description": "AI-powered performance analysis, career acceleration, and nutrition planning for elite athletes.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

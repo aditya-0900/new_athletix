@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #10b981; /* Emerald 500 */
+  --color-brand-secondary: #064e3b; /* Emerald 900 */
+  --color-brand-accent: #fbbf24; /* Amber 400 */
+
+  @keyframes shimmer {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  }
+
+  @keyframes drift {
+    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { transform: translateY(-100vh) translateX(20px); opacity: 0; }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.1); }
+  }
+
+  @keyframes border-beam {
+    0% { offset-distance: 0%; }
+    100% { offset-distance: 100%; }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100 font-sans antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl transition-all duration-300;
+}
+
+.glass-card:hover {
+  @apply border-white/20 bg-white/8 shadow-2xl shadow-emerald-500/10;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 to-emerald-400 bg-[length:200%_auto] animate-[shimmer_5s_linear_infinite];
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+}
+
+.grid-shimmer {
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+}
+
+.particle {
+  @apply absolute rounded-full bg-emerald-500/20 pointer-events-none;
+  animation: drift var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+.beam {
+  @apply absolute w-[2px] h-full bg-gradient-to-b from-transparent via-emerald-500/20 to-transparent blur-sm;
+}
+
+.btn-glow {
+  @apply relative overflow-hidden transition-all duration-300;
+}
+
+.btn-glow::after {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full transition-transform duration-500;
+}
+
+.btn-glow:hover::after {
+  @apply translate-x-full;
+}
+
+.btn-glow:hover {
+  @apply shadow-[0_0_20px_rgba(16,185,129,0.4)];
+}
+
+.icon-react {
+  @apply transition-transform duration-300;
+}
+
+.group:hover .icon-react {
+  @apply scale-110 rotate-12 text-emerald-400;
+}
+
