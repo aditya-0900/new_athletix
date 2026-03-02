@@ -24,6 +24,7 @@ import VideoAnalysisSimulation from './components/VideoAnalysisSimulation';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
   
@@ -38,6 +39,13 @@ export default function App() {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
     };
+    useEffect(() => {
+  const timer = setTimeout(() => {
+    setShowPopup(true);
+  }, 2000);
+
+  return () => clearTimeout(timer);
+}, []);
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
@@ -346,6 +354,46 @@ export default function App() {
           </div>
         </div>
       </footer>
+       {/* 🔥 Early Access Popup */}
+      <AnimatePresence>
+        {showPopup && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/70 flex items-center justify-center z-[100]"
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              className="bg-zinc-900 border border-emerald-500/20 p-8 rounded-2xl max-w-md w-full text-center relative"
+            >
+              <button
+                onClick={() => setShowPopup(false)}
+                className="absolute top-4 right-4 text-zinc-400 hover:text-white text-xl"
+              >
+                ✕
+              </button>
+
+              <h2 className="text-2xl font-bold mb-4">
+                🚀 Early Access Offer
+              </h2>
+
+              <p className="text-zinc-400 mb-6">
+                Sign up now to get exclusive early access and special launch discounts.
+              </p>
+
+              <a
+                href="/signup.html"
+                className="w-full block bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-3 rounded-xl transition-all btn-glow"
+              >
+                Get Started
+              </a>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
