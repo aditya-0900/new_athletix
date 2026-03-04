@@ -754,25 +754,14 @@ useEffect(() => {
         className="px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 focus:border-emerald-500 outline-none"
       />
 
-      <input
-        type="email"
-        placeholder="Email Address"
-        required
-        className="px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 focus:border-emerald-500 outline-none"
-      />
-
+     
       <input
         type="text"
         placeholder="Sport (Cricket, Football...)"
         className="px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 focus:border-emerald-500 outline-none"
       />
 
-      <input
-        type="text"
-        placeholder="City"
-        className="px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 focus:border-emerald-500 outline-none"
-      />
-
+    
       <button
         type="submit"
         className="md:col-span-2 bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-4 rounded-xl transition btn-glow"
