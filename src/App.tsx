@@ -313,9 +313,30 @@ useEffect(() => {
 
     </div>
 
-    <p className="text-emerald-400 mt-16 text-lg font-semibold">
-      ATHLETIXI solves this using AI-powered analysis and structured training.
-    </p>
+    <motion.p
+  className="text-center text-lg md:text-xl font-semibold mt-16"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={{
+    visible: { transition: { staggerChildren: 0.05 } },
+  }}
+>
+  {"ATHLETIXI solves this using AI-powered analysis and structured training."
+    .split(" ")
+    .map((word, i) => (
+      <motion.span
+        key={i}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="inline-block mr-2 text-emerald-400"
+      >
+        {word}
+      </motion.span>
+    ))}
+</motion.p>
 
   </div>
 </section>
