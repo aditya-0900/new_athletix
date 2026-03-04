@@ -353,6 +353,244 @@ useEffect(() => {
 
   </div>
 </section>
+{/* How It Works Section */}
+<section className="py-24 bg-zinc-900/40">
+  <div className="max-w-7xl mx-auto px-4 text-center">
+
+    {/* Heading */}
+    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+      How <span className="text-emerald-500">ATHLETIXI</span> Works
+    </h2>
+
+    <p className="text-zinc-400 max-w-2xl mx-auto mb-16">
+      Turn your game footage into powerful insights and structured improvement with AI.
+    </p>
+
+    {/* Steps */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      {/* Step 1 */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="bg-zinc-900 border border-white/5 rounded-2xl p-8 hover:border-emerald-500/40 transition"
+      >
+        <div className="text-emerald-500 text-3xl font-bold mb-4">1</div>
+        <Activity size={32} className="text-emerald-500 mb-4 mx-auto"/>
+        <h3 className="text-xl font-semibold mb-3">Upload Match Video</h3>
+        <p className="text-zinc-400 text-sm">
+          Record your game or practice session and upload the footage to ATHLETIXI.
+        </p>
+      </motion.div>
+
+      {/* Step 2 */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="bg-zinc-900 border border-white/5 rounded-2xl p-8 hover:border-emerald-500/40 transition"
+      >
+        <div className="text-emerald-500 text-3xl font-bold mb-4">2</div>
+        <BrainCircuit size={32} className="text-emerald-500 mb-4 mx-auto"/>
+        <h3 className="text-xl font-semibold mb-3">AI Performance Analysis</h3>
+        <p className="text-zinc-400 text-sm">
+          Our computer vision models analyze movement, technique, speed, and performance metrics.
+        </p>
+      </motion.div>
+
+      {/* Step 3 */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="bg-zinc-900 border border-white/5 rounded-2xl p-8 hover:border-emerald-500/40 transition"
+      >
+        <div className="text-emerald-500 text-3xl font-bold mb-4">3</div>
+        <Trophy size={32} className="text-emerald-500 mb-4 mx-auto"/>
+        <h3 className="text-xl font-semibold mb-3">Improve & Get Discovered</h3>
+        <p className="text-zinc-400 text-sm">
+          Receive personalized training plans, AI coaching, and visibility to clubs and sponsors.
+        </p>
+      </motion.div>
+
+    </div>
+
+  </div>
+</section>
+{/* Built For Section */}
+<section className="py-24 bg-zinc-950">
+  <div className="max-w-7xl mx-auto px-4 text-center">
+
+    {/* Heading */}
+    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+      Built For <span className="text-emerald-500">Serious Athletes</span>
+    </h2>
+
+    <p className="text-zinc-400 max-w-2xl mx-auto mb-16">
+      Whether you're an aspiring player or competing at academy level, ATHLETIXI
+      helps you analyze performance, improve faster, and get noticed.
+    </p>
+
+    {/* Sports Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+      <div className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition">
+        <span className="text-4xl">🏏</span>
+        <h3 className="mt-4 font-semibold">Cricket Players</h3>
+        <p className="text-sm text-zinc-400 mt-2">
+          Improve batting, bowling, and fielding performance.
+        </p>
+      </div>
+
+      <div className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition">
+        <span className="text-4xl">⚽</span>
+        <h3 className="mt-4 font-semibold">Football Players</h3>
+        <p className="text-sm text-zinc-400 mt-2">
+          Track movement, speed, and tactical awareness.
+        </p>
+      </div>
+
+      <div className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition">
+        <span className="text-4xl">🏃</span>
+        <h3 className="mt-4 font-semibold">Track Athletes</h3>
+        <p className="text-sm text-zinc-400 mt-2">
+          Analyze running technique, speed, and endurance.
+        </p>
+      </div>
+
+      <div className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition">
+        <span className="text-4xl">🎾</span>
+        <h3 className="mt-4 font-semibold">Tennis Players</h3>
+        <p className="text-sm text-zinc-400 mt-2">
+          Improve stroke mechanics and court performance.
+        </p>
+      </div>
+
+    </div>
+
+    {/* Bottom Line */}
+    <p className="text-emerald-400 mt-16 text-lg font-semibold">
+      From grassroots players to elite academy athletes.
+    </p>
+
+  </div>
+</section>
+{/* Everything in One Platform */}
+<section className="py-24 bg-zinc-900/40">
+  <div className="max-w-7xl mx-auto px-4 text-center">
+
+    {/* Heading */}
+    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+      Everything an Athlete Needs <br />
+      <span className="text-emerald-500">in One Platform</span>
+    </h2>
+
+    <p className="text-zinc-400 max-w-2xl mx-auto mb-16">
+      ATHLETIXI combines performance analytics, AI coaching, training plans,
+      and career opportunities into a single powerful ecosystem.
+    </p>
+
+    {/* Feature Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      {/* Feature 1 */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition"
+      >
+        <Activity className="text-emerald-500 mb-4 mx-auto" size={30} />
+        <h3 className="text-lg font-semibold mb-2">AI Performance Analysis</h3>
+        <p className="text-zinc-400 text-sm">
+          Track movement, technique, and performance metrics using advanced computer vision.
+        </p>
+      </motion.div>
+
+      {/* Feature 2 */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition"
+      >
+        <BrainCircuit className="text-emerald-500 mb-4 mx-auto" size={30} />
+        <h3 className="text-lg font-semibold mb-2">AI Coaching Assistant</h3>
+        <p className="text-zinc-400 text-sm">
+          Get personalized training guidance and performance feedback from your AI coach.
+        </p>
+      </motion.div>
+
+      {/* Feature 3 */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition"
+      >
+        <Target className="text-emerald-500 mb-4 mx-auto" size={30} />
+        <h3 className="text-lg font-semibold mb-2">Structured Training Plans</h3>
+        <p className="text-zinc-400 text-sm">
+          Follow structured training roadmaps designed to accelerate athlete development.
+        </p>
+      </motion.div>
+
+      {/* Feature 4 */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition"
+      >
+        <Utensils className="text-emerald-500 mb-4 mx-auto" size={30} />
+        <h3 className="text-lg font-semibold mb-2">Personalized Nutrition</h3>
+        <p className="text-zinc-400 text-sm">
+          AI-powered nutrition guidance tailored to your sport and training intensity.
+        </p>
+      </motion.div>
+
+      {/* Feature 5 */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition"
+      >
+        <Trophy className="text-emerald-500 mb-4 mx-auto" size={30} />
+        <h3 className="text-lg font-semibold mb-2">Tournaments & Opportunities</h3>
+        <p className="text-zinc-400 text-sm">
+          Discover competitions and opportunities that match your skill level.
+        </p>
+      </motion.div>
+
+      {/* Feature 6 */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="bg-zinc-900 border border-white/5 p-8 rounded-2xl hover:border-emerald-500/40 transition"
+      >
+        <Network className="text-emerald-500 mb-4 mx-auto" size={30} />
+        <h3 className="text-lg font-semibold mb-2">Sponsors & Clubs</h3>
+        <p className="text-zinc-400 text-sm">
+          Connect with clubs, academies, and sponsors looking for emerging talent.
+        </p>
+      </motion.div>
+
+    </div>
+
+  </div>
+</section>
         {/* Dashboard Section */}
         <section id="analysis" className="py-20 bg-zinc-900/30">
           <div className="max-w-7xl mx-auto px-4">
@@ -373,7 +611,125 @@ useEffect(() => {
             <NetworkingSection />
           </div>
         </section>
+{/* Get Discovered Section */}
+<section className="py-24 bg-zinc-950">
+  <div className="max-w-7xl mx-auto px-4">
 
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      {/* Left Content */}
+      <div>
+        <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          Get <span className="text-emerald-500">Discovered</span>
+        </h2>
+
+        <p className="text-zinc-400 mb-10 max-w-xl">
+          ATHLETIXI helps talented athletes get noticed by clubs, academies,
+          and sponsors through AI-powered performance profiles.
+        </p>
+
+        <div className="space-y-6">
+
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-emerald-500/10">
+              <Users className="text-emerald-500" size={20} />
+            </div>
+            <div>
+              <h4 className="font-semibold">Clubs & Academies</h4>
+              <p className="text-sm text-zinc-400">
+                Showcase your performance data to professional clubs and training academies.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-emerald-500/10">
+              <Network className="text-emerald-500" size={20} />
+            </div>
+            <div>
+              <h4 className="font-semibold">Sponsors</h4>
+              <p className="text-sm text-zinc-400">
+                Build a performance-backed athlete profile that attracts sponsorship opportunities.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-emerald-500/10">
+              <Trophy className="text-emerald-500" size={20} />
+            </div>
+            <div>
+              <h4 className="font-semibold">Talent Scouts</h4>
+              <p className="text-sm text-zinc-400">
+                Get discovered by scouts looking for emerging talent across multiple sports.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Right Visual Cards */}
+      <div className="grid grid-cols-2 gap-6">
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="bg-zinc-900 border border-white/5 rounded-2xl p-6"
+        >
+          <h3 className="font-semibold mb-2">Performance Profile</h3>
+          <p className="text-sm text-zinc-400">
+            AI-generated athlete performance reports and insights.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="bg-zinc-900 border border-white/5 rounded-2xl p-6"
+        >
+          <h3 className="font-semibold mb-2">Talent Visibility</h3>
+          <p className="text-sm text-zinc-400">
+            Athletes get visibility across clubs, tournaments, and leagues.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="bg-zinc-900 border border-white/5 rounded-2xl p-6"
+        >
+          <h3 className="font-semibold mb-2">Career Growth</h3>
+          <p className="text-sm text-zinc-400">
+            Structured development pathways powered by AI insights.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="bg-zinc-900 border border-white/5 rounded-2xl p-6"
+        >
+          <h3 className="font-semibold mb-2">Sponsorship Potential</h3>
+          <p className="text-sm text-zinc-400">
+            Brands and sponsors discover promising athletes.
+          </p>
+        </motion.div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
         {/* CTA Section */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4">
