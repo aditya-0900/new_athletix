@@ -730,6 +730,63 @@ useEffect(() => {
 
   </div>
 </section>
+{/* Landing Page Signup */}
+<section className="py-24 bg-zinc-950">
+  <div className="max-w-4xl mx-auto px-4 text-center">
+
+    <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      Join the <span className="text-emerald-500">ATHLETIXI Early Access</span>
+    </h2>
+
+    <p className="text-zinc-400 mb-12">
+      Be among the first athletes to experience AI-powered performance analysis
+      and career opportunities.
+    </p>
+
+    <form
+      action="/signup.html"
+      className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto"
+    >
+      <input
+        type="text"
+        placeholder="Full Name"
+        required
+        className="px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 focus:border-emerald-500 outline-none"
+      />
+
+      <input
+        type="email"
+        placeholder="Email Address"
+        required
+        className="px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 focus:border-emerald-500 outline-none"
+      />
+
+      <input
+        type="text"
+        placeholder="Sport (Cricket, Football...)"
+        className="px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 focus:border-emerald-500 outline-none"
+      />
+
+      <input
+        type="text"
+        placeholder="City"
+        className="px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 focus:border-emerald-500 outline-none"
+      />
+
+      <button
+        type="submit"
+        className="md:col-span-2 bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-4 rounded-xl transition btn-glow"
+      >
+        Get Early Access
+      </button>
+    </form>
+
+    <p className="text-xs text-zinc-500 mt-6">
+      You will be redirected to complete your athlete profile.
+    </p>
+
+  </div>
+</section>
         {/* CTA Section */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4">
