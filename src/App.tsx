@@ -265,21 +265,23 @@ useEffect(() => {
             </motion.div>
           </div>
         </section>
-        {/* Problem Section */}
 <section className="py-24 bg-zinc-950">
   <div className="max-w-7xl mx-auto px-4 text-center">
 
+    {/* Heading */}
     <h2 className="text-4xl md:text-6xl font-bold mb-6">
       Why Most Athletes <span className="text-emerald-500">Struggle to Improve</span>
     </h2>
 
+    {/* Subheading */}
     <p className="text-zinc-400 max-w-2xl mx-auto mb-16">
       Even talented players fail to reach the next level because they lack the tools used by professional athletes.
     </p>
 
+    {/* Problem Cards */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl">
+      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition">
         <Activity className="text-emerald-500 mb-4" size={28}/>
         <h3 className="text-lg font-semibold mb-2">No Performance Analysis</h3>
         <p className="text-zinc-400 text-sm">
@@ -287,7 +289,7 @@ useEffect(() => {
         </p>
       </div>
 
-      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl">
+      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition">
         <Target className="text-emerald-500 mb-4" size={28}/>
         <h3 className="text-lg font-semibold mb-2">No Structured Training</h3>
         <p className="text-zinc-400 text-sm">
@@ -295,7 +297,7 @@ useEffect(() => {
         </p>
       </div>
 
-      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl">
+      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition">
         <Users className="text-emerald-500 mb-4" size={28}/>
         <h3 className="text-lg font-semibold mb-2">Hard to Get Discovered</h3>
         <p className="text-zinc-400 text-sm">
@@ -303,7 +305,7 @@ useEffect(() => {
         </p>
       </div>
 
-      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl">
+      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl hover:border-emerald-500/30 transition">
         <BrainCircuit className="text-emerald-500 mb-4" size={28}/>
         <h3 className="text-lg font-semibold mb-2">No Personalized Coaching</h3>
         <p className="text-zinc-400 text-sm">
@@ -313,30 +315,41 @@ useEffect(() => {
 
     </div>
 
+    {/* Divider */}
+    <div className="w-24 h-[2px] bg-emerald-500 mx-auto mt-16 mb-8 opacity-50"></div>
+
+    {/* Animated Solution Text */}
     <motion.p
-  className="text-center text-lg md:text-xl font-semibold mt-16"
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true }}
-  variants={{
-    visible: { transition: { staggerChildren: 0.05 } },
-  }}
->
-  {"ATHLETIXI solves this using AI-powered analysis and structured training."
-    .split(" ")
-    .map((word, i) => (
-      <motion.span
-        key={i}
-        variants={{
-          hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        className="inline-block mr-2 text-emerald-400"
-      >
-        {word}
-      </motion.span>
-    ))}
-</motion.p>
+      className="text-center text-lg md:text-xl font-semibold drop-shadow-[0_0_10px_rgba(16,185,129,0.5)]"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={{
+        hidden: {},
+        visible: {
+          transition: { staggerChildren: 0.05 }
+        }
+      }}
+    >
+      {"ATHLETIXI solves this using AI-powered analysis and structured training."
+        .split(" ")
+        .map((word, i) => (
+          <motion.span
+            key={i}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 }
+            }}
+            className={`inline-block mr-2 ${
+              word.includes("AI-powered") || word.includes("structured")
+                ? "text-emerald-400 font-bold"
+                : "text-zinc-300"
+            }`}
+          >
+            {word}
+          </motion.span>
+        ))}
+    </motion.p>
 
   </div>
 </section>
