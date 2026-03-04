@@ -204,8 +204,8 @@ useEffect(() => {
                 transition={{ delay: 0.1 }}
                 className="text-5xl md:text-7xl lg:text-8xl font-display font-black leading-[0.9] tracking-tighter"
               >
-                The AI Companion for<br />
-                <span className="gradient-text">Elite Performance</span>
+                AI That Analyzes Your Game<br />
+                <span className="gradient-text">and Helps You Train Like a Pro</span>
               </motion.h1>
 
               <motion.p 
@@ -265,7 +265,60 @@ useEffect(() => {
             </motion.div>
           </div>
         </section>
+        {/* Problem Section */}
+<section className="py-24 bg-zinc-950">
+  <div className="max-w-7xl mx-auto px-4 text-center">
 
+    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+      Why Most Athletes <span className="text-emerald-500">Struggle to Improve</span>
+    </h2>
+
+    <p className="text-zinc-400 max-w-2xl mx-auto mb-16">
+      Even talented players fail to reach the next level because they lack the tools used by professional athletes.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl">
+        <Activity className="text-emerald-500 mb-4" size={28}/>
+        <h3 className="text-lg font-semibold mb-2">No Performance Analysis</h3>
+        <p className="text-zinc-400 text-sm">
+          Athletes rely on guesswork instead of real performance data.
+        </p>
+      </div>
+
+      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl">
+        <Target className="text-emerald-500 mb-4" size={28}/>
+        <h3 className="text-lg font-semibold mb-2">No Structured Training</h3>
+        <p className="text-zinc-400 text-sm">
+          Training routines are random and not optimized for improvement.
+        </p>
+      </div>
+
+      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl">
+        <Users className="text-emerald-500 mb-4" size={28}/>
+        <h3 className="text-lg font-semibold mb-2">Hard to Get Discovered</h3>
+        <p className="text-zinc-400 text-sm">
+          Clubs and sponsors rarely notice talented athletes.
+        </p>
+      </div>
+
+      <div className="bg-zinc-900 border border-white/5 p-6 rounded-2xl">
+        <BrainCircuit className="text-emerald-500 mb-4" size={28}/>
+        <h3 className="text-lg font-semibold mb-2">No Personalized Coaching</h3>
+        <p className="text-zinc-400 text-sm">
+          Most athletes don’t have access to expert feedback.
+        </p>
+      </div>
+
+    </div>
+
+    <p className="text-emerald-400 mt-16 text-lg font-semibold">
+      ATHLETIXI solves this using AI-powered analysis and structured training.
+    </p>
+
+  </div>
+</section>
         {/* Dashboard Section */}
         <section id="analysis" className="py-20 bg-zinc-900/30">
           <div className="max-w-7xl mx-auto px-4">
