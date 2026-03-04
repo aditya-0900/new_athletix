@@ -202,7 +202,7 @@ useEffect(() => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-display font-black leading-[0.9] tracking-tighter"
+               className="text-4xl md:text-5xl lg:text-6xl font-display font-black leading-tight tracking-tighter"
               >
                 AI That Analyzes Your Game<br />
                 <span className="gradient-text">and Helps You Train Like a Pro</span>
